@@ -17,7 +17,7 @@ JDK >=17
 
 Image + favicon from external folder ([/external](./external))
 - can be viewed
-- by any (un-/athenticated) user
+- by any (un-/authenticated) user
 
 ### Key Configuration
 - [application.properties](./src/main/resources/appliaction.properties)
