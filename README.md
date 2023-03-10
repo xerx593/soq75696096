@@ -12,7 +12,7 @@ JDK >=17
   ./mvnw clean spring-boot:run
   ```
 - Browse to http://localhost:8080/
-
+- (Authentication credentials: User is `user` and password will be logged to console (at each container start))
 ### Key Points
 
 Image + favicon from external folder ([/external](./external))
