@@ -17,19 +17,19 @@ JDK >=17
 
 Image + favicon from external folder ([/external](./external))
 - can be viewed
-- and unsecured
+- by any (un-/athenticated) user
 
 ### Key Configuration
+- [application.properties](./src/main/resources/appliaction.properties)
+  ```lang-properties
+  spring.web.resources.static-locations=file:./external/
+  ```
 - [App/Config](./src/main/java/com/stackoverflow/q75696096/Q75696096Application.java):
   ```lang-java
   //...
   .requestMatchers(toStaticResources().atCommonLocations()).permitAll()
   ```
-- [application.properties](./src/main/resources/appliaction.properties)
-  ```lang-properties
-  spring.web.resources.static-locations=file:./external/
-  ```
-
+  
 ### Thanks To
 
 - https://memegenerator.net/instance/81819896/joe-dirt-dang-it-works-on-my-computer
