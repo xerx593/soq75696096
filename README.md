@@ -1,2 +1,30 @@
 # soq75696096
-Demo project for [How to serve static content from an external location with spring-boot+security](https://stackoverflow.com/q/75696096/592355)
+Demo project for [How to serve static content from an external location with spring-boot+security?](https://stackoverflow.com/q/75696096/592355)
+
+### Prerequisites
+
+JDK >=17
+
+### Installation and Run
+
+- Execute from command line:
+  ```lang-bash
+  ./mvnw clean spring-boot:run
+  ```
+- Browse to `http://localhost:8080/
+
+### KeyPoints
+
+- image + favicon from external folder ([./external])
+- can be viewed unsecured
+
+### Thanks To
+
+- https://memegenerator.net/instance/81819896/joe-dirt-dang-it-works-on-my-computer
+- https://raw.githubusercontent.com/spring-projects/spring-petclinic/main/src/main/resources/static/resources/images/favicon.png
+ for the images.
+
+### Relevant Spring Guides
+
+* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
+* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)

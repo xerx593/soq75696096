@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" th:href="@{/favicon.png}">
+    <title>External Images Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <h2>Public Page</h2>
+    <img src="../../../dang.jpg" th:src="@{/images/dang.jpg}" alt="dang"/>
+    <a href="/secured" th:href="@{/secured}">Visit secured page</a>
+  </body>
+</html>
