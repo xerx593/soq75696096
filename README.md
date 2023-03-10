@@ -11,17 +11,30 @@ JDK >=17
   ```lang-bash
   ./mvnw clean spring-boot:run
   ```
-- Browse to `http://localhost:8080/
+- Browse to http://localhost:8080/
 
-### KeyPoints
+### Key Points
 
-- image + favicon from external folder ([./external])
-- can be viewed unsecured
+Image + favicon from external folder ([/external](./external))
+- can be viewed
+- and unsecured
+
+### Key Configuration
+- [App/Config](./src/main/java/com/stackoverflow/q75696096/Q75696096Application.java):
+  ```lang-java
+  //...
+  .requestMatchers(toStaticResources().atCommonLocations()).permitAll()
+  ```
+- [application.properties](./src/main/resources/appliaction.properties)
+  ```lang-properties
+  spring.web.resources.static-locations=file:./external/
+  ```
 
 ### Thanks To
 
 - https://memegenerator.net/instance/81819896/joe-dirt-dang-it-works-on-my-computer
 - https://raw.githubusercontent.com/spring-projects/spring-petclinic/main/src/main/resources/static/resources/images/favicon.png
+ 
  for the images.
 
 ### Relevant Spring Guides
